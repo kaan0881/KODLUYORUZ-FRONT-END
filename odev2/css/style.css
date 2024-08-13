@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
+.menu_item{
+    padding: 5px;
+    min-width: 85px;
+    vertical-align: middle;
+}
+
+.login_btn {
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    background: #0b57d0;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    min-height: 40px;
+    outline: none;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    white-space: normal;
+    line-height: 18px;
+    position: relative;
+  }
+
+.search_section {
+    padding: 10px;
+    height: 50vh;
+}
+
+/* arama kutu container*/
+
+.search_container {
+    display: flex;
+    z-index: 3;
+    position: relative;
+    min-height: 44px;
+    background: #fff;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    margin: 0 auto;
+    width: 638px;
+    width: auto;
+    max-width: 584px;
+}
+.search_row {
+    flex: 1;
+    display: flex;
+    padding: 0 8px 0 0;
+}
+
+
+/*arama kutusu arama ikon ****/
+.search_icon_col {
+    display: flex;
+    align-items: center;
+    padding-right: 13px;
+    padding-left: 14px;
+    height: 46px;
+}
+
+.QCzoEc {
+    margin-top: 3px;
+    color: #9aa0a6;
+}
+.z1asCe {
+    display: inline-block;
+    fill: currentColor;
+    height: 24px;
+    line-height: 24px;
+    position: relative;
+    width: 24px;
+}
+/********-***/
+.search_text_col {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+}
+.YacQv {
+    color: transparent;
+    white-space: pre;
+    position: absolute;
+    pointer-events: none;
+}
+/*** arama kutusu textarae******/
+
+textarea.gLFyf, .ql1tMb, .YacQv {
+    font-family: Arial, sans-serif;
+    line-height: 22px;
+    border-bottom: 8px solid transparent;
+    padding-top: 11px;
+    overflow-x: hidden;
+}
+.gLFyf {
+    resize: none;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    color: rgba(0, 0, 0, .87);
+    word-wrap: break-word;
+    outline: none;
+    display: flex;
+    -webkit-tap-highlight-color: transparent;
+}
+.gLFyf, .ql1tMb, .YacQv {
+    line-height: 34px;
+    font-size: 16px;
+    flex: 100%;
+}
+textarea {
+
+    font-family: monospace;
+
+    text-rendering: auto;
+    color: fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    resize: -internal-textarea-auto;
+    cursor: text;
+    overflow-wrap: break-word;
+    background-color: field;
+    column-count: initial !important;
+    margin: 0em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+    padding: 2px;
+    white-space: pre-wrap;
+}
+
+/*******/
+.dRYYxd {
+    display: flex;
+    flex: 0 0 auto;
+    align-items: stretch;
+    flex-direction: row;
+    height: 44px;
+    padding: 15px;
+}
+/***arama kutusu klavye****/
+.search_keybord_col {
+    flex: 1 0 auto;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    border: 0;
+    background: transparent;
+    outline: none;
+    padding: 0 10px;
+    width: 24px;
+    line-height: 44px;
+}
+.icon_keybord {
+    background: url(../images/tia.png) no-repeat center;
+    height: 24px;
+    width: 24px;
+    vertical-align: middle;
+}
+
+.yAnw3c {
+    visibility: hidden;
+}
+
+/****arama kutusu mikrofon***/
+.search_microphone_col {
+    flex: 1 0 auto;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    border: 0;
+    background: transparent;
+    outline: none;
+    padding: 0 10px;
+    width: 24px;
+    line-height: 44px;
+}
+.icon_microphone {
+        flex: 1 0 auto;
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+        border: 0;
+        background: transparent;
+        outline: none;
+        padding: 0 8px;
+        width: 24px;
+        line-height: 44px;
+}
+
+.goxjub {
+    height: 24px;
+    width: 24px;
+    vertical-align: middle;
+}
+
+/**aram kutusu son kısım*/
+.search_image_search_col {
+    flex: 1 0 auto;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    border: 0;
+    background: transparent;
+    outline: none;
+    padding: 0 20px;
+    width: 24px;
+    line-height: 44px;
+}
+
+.icon_image {
+    height: 24px;
+    width: 24px;
+    vertical-align: middle;
+}
+
+
+svg {
+    height: 24px;
+}
+
+.UUbT9 {
+    position: absolute;
+    text-align: left;
+    z-index: 3;
+    cursor: default;
+    -webkit-user-select: none;
+    width: 100%;
+    margin-top: -1px;
+}
+
+.lJ9FBc {
+    height: 70px;
+}
+
+.FPdoLc {
+    padding-top: 18px;
+}
+
+.lJ9FBc input[type="submit"], .gbqfba {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.lJ9FBc input[type="submit"]:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124
+}
+
+.lJ9FBc input[type="submit"]:focus {
+    border: 1px solid #4285f4;
+    outline: none
+}
+
+footer .c93Gbe {
+    background: #f2f2f2;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .o3j99 {
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+.country {
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+    font-size: 15px;
+    color: #1f1f1f;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.KxwPGc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.SSwjIe {
+    padding: 0 20px;
+}
+
+.ktLKi {
+    white-space: nowrap;
+    vertical-align: top;
+}
+
+.pHiOh, a.pHiOh {
+    color: #1f1f1f;
+}
+
+.pHiOh {
+    display: block;
+    padding: 15px;
+    white-space: nowrap;
+}
+
+a {
+    color: #1a0dab;
+    text-decoration: none;
+}
