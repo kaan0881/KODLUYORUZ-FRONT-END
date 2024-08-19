@@ -1,0 +1,33 @@
+/*******
+PATİKA DEV > Başlangıç Seviye Frontend Web Development Patikası > Veri Yapıları ve Algoritmalar dersi > proje 3
+**********
+
+Soru: [7, 5, 1, 8, 3, 6, 0, 9, 4, 2] dizisinin Binary-Search-Tree aşamalarını yazınız.
+Örnek: root x'dir. root'un sağından y bulunur. Solunda z bulunur vb.
+
+Cevap: 
+Aşamalar;
+Aşamalar:
+
+ * 7: Kök düğüm olarak eklenir.
+ * 5: 7'den küçük olduğu için 7'nin soluna eklenir.
+ * 1: 5'ten küçük olduğu için 5'in soluna eklenir.
+ * 8: 7'den büyük olduğu için 7'nin sağına eklenir.   
+ * 3: 5'ten küçük olduğu için 5'in soluna eklenir. Ancak 1'den büyük olduğu için 1'in sağına eklenir.   
+ * 6: 7'den küçük olduğu için 7'nin soluna eklenir. 5'ten büyük olduğu için 5'in sağına eklenir.
+ * 0: 1'den küçük olduğu için 1'in soluna eklenir.
+ * 9: 7'den büyük olduğu için 7'nin sağına eklenir. 8'den büyük olduğu için 8'in sağına eklenir.
+ * 4: 5'ten küçük olduğu için 5'in soluna eklenir. 3'ten büyük olduğu için 3'ün sağına eklenir.
+ * 2: 3'ten küçük olduğu için 3'ün soluna eklenir. 1'den büyük olduğu için 1'in sağına eklenir.
+
+ Oluşan BST:
+
+     7
+    / \
+   5   8
+  / \   \
+ 1   6   9
+    / \
+   3   4
+    /
+   2

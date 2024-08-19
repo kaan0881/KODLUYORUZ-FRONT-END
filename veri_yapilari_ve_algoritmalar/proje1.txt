@@ -1,0 +1,53 @@
+/*******
+PATİKA DEV > Başlangıç Seviye Frontend Web Development Patikası > Veri Yapıları ve Algoritmalar dersi > proje 1
+**********
+
+Soru : [22,27,16,2,18,6] -> Insertion Sort
+
+Yukarı verilen dizinin sort türüne göre aşamalarını yazınız.
+
+Cevap : Verilen Dizi ve Insertion Sort Aşamaları
+
+* İlk eleman zaten sıralı: [22, 27, 16, 2, 18, 6] 
+* 16, 27'den küçük olduğu için yer değiştirir: [16, 22, 27, 2, 18, 6]
+* 2, 22'den küçük olduğu için 22 ve 16 ile yer değiştirir: [2, 16, 22, 27, 18, 6]
+* 18, 22'den küçük olduğu için 22 ile yer değiştirir: [2, 16, 18, 22, 27, 6]
+* 6, 18'den küçük olduğu için 16 ile yer değiştirir: [2, 6, 16, 18, 22, 27]
+
+Soru : [22,27,16,2,18,6] -> Insertion Sort 
+Big-O gösterimini yazınız.
+
+Cevap: Big-O Gösterimi
+
+Insertion Sort'un ortalama ve en kötü durumdaki zaman karmaşıklığı O(n^2)'dir. Yani, dizinin boyutu arttıkça işlem süresi yaklaşık olarak boyutun karesine göre artar. En iyi durumda (dizi zaten sıralıysa) zaman karmaşıklığı O(n)'dir.
+
+Soru: [22,27,16,2,18,6] -> Insertion Sort
+
+Time Complexity: Dizi sıralandıktan sonra 18 sayısı aşağıdaki case'lerden hangisinin kapsamına girer? Yazınız
+
+* Average case: Aradığımız sayının ortada olması
+* Worst case: Aradığımız sayının sonda olması
+* Best case: Aradığımız sayının dizinin en başında olması.
+
+Cevap: 18 sayısı, bu durumda average case'e yakın bir durumdadır. Çünkü dizi ortasının biraz solunda yer almaktadır. Ancak, average case tam olarak ortası olduğu için, 18 sayısı için tam olarak average case demek doğru olmaz.
+
+Soru: [7,3,5,8,2,9,4,15,6] dizisinin Selection Sort'a göre ilk 4 adımını yazınız.
+
+Cevap: 
+1. Adım:
+    * En küçük eleman: 2
+    * 2'yi dizinin başına al: [2, 7, 5, 8, 3, 9, 4, 15, 6]
+
+2. Adım:
+    * Kalan dizideki en küçük eleman: 3
+    * 3'ü ikinci sıraya al: [2, 3, 7, 5, 8, 9, 4, 15, 6]
+
+3. Adım:
+    * Kalan dizideki en küçük eleman: 4
+    * 4'ü üçüncü sıraya al: [2, 3, 4, 7, 5, 8, 9, 15, 6]
+
+4. Adım:
+    * Kalan dizideki en küçük eleman: 5
+    * 5'i dördüncü sıraya al: [2, 3, 4, 5, 7, 8, 9, 15, 6]
+
+Sonuç: İlk dört adım sonunda dizi şu hale gelir: [2, 3, 4, 5, 7, 8, 9, 15, 6]

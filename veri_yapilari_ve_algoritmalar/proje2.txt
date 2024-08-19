@@ -1,0 +1,42 @@
+/*******
+PATİKA DEV > Başlangıç Seviye Frontend Web Development Patikası > Veri Yapıları ve Algoritmalar dersi > proje 2
+**********
+
+Soru: [16,21,11,8,12,22] -> Merge Sort 
+Yukarıdaki dizinin sort türüne göre aşamalarını yazınız.
+
+
+Cevap:
+Aşamalar;
+
+1. Bölme: Diziyi ortasından ikiye böleriz: [16, 21, 11] ve [8, 12, 22]
+
+2. Tekrarlı Bölme:
+    Her iki alt diziyi de ortasından böleriz:
+    [16, 21, 11] -> [16, 21] ve [11]
+    [8, 12, 22] -> [8, 12] ve [22]
+
+3. Birleştirme ve Sıralama: En küçük alt dizileri (tek elemanlı dizileri) birleştirip sıralarız.
+Ardından daha büyük alt dizileri birleştirip sıralarız.
+Bu işlem, tüm dizi sıralanana kadar devam eder.
+
+Görselleştirme:
+    [16, 21, 11, 8, 12, 22]
+      /               \
+    [16, 21, 11]      [8, 12, 22]
+      /     \           /     \
+    [16, 21] [11]      [8, 12] [22]
+    /  \     |         /  \    |
+    [16] [21] [11]     [8]  [12] [22]
+
+Birleştirme Örneği: [16, 21] ve [11] dizilerini birleştirelim:
+    İki dizinin ilk elemanlarını karşılaştırırız: 16 ve 11.
+    11 daha küçük olduğu için yeni diziye eklenir.
+    Kalan elemanlar için bu işlem tekrarlanır.
+Sonuç: [11, 16, 21]
+Sonuç: Tüm birleştirme işlemleri tamamlandığında sırlanmış dizi elde edilir.
+
+Soru: [16,21,11,8,12,22] -> Merge Sort 
+Big-O gösterimini yazınız.
+
+Cevap: Merge Sort algoritmasının ortalama ve en kötü durumdaki zaman karmaşıklığı O(n log n)'dir. Bu, dizinin boyutu arttıkça işlem süresinin yaklaşık olarak n * log(n) oranında artacağı anlamına gelir.
